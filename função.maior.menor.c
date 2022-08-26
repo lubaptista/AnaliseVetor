@@ -1,7 +1,7 @@
 void maiorValor(int Vet[]){
   int maior; //variavel para calcular maior valor do vetor
   //calculo do maior valor
-  maior = 0;
+  maior = Vet[0];
 
   for(int i=0; i<1000;i++)
     {
