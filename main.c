@@ -12,20 +12,20 @@ void maiorValor(int Vet[1001]);
 void menorValor(int Vet[1001]);
 
 int main(){
-    int vet[1001], i;
+    int vet[1001], i, geraV;
 
-  gerador(vet);
+  geraV = gerador(vet);
 
-  BubbleSort(vet);
-  QuickSort(vet);
+  BubbleSort(geraV);
+  QuickSort(geraV);
 
 
-  imprimirVet(vet);
+  imprimirVet(geraV);
 
-  media(vet);
-  mediana(vet);
-  maiorValor(vet);
-  menorValor(vet);
+  media(geraV);
+  mediana(geraV);
+  maiorValor(geraV);
+  menorValor(geraV);
   return 0;}
 
 int gerador(int Vet[1001]){
@@ -59,7 +59,7 @@ void imprimirVet (int Vet[1001]){
 }
 
 void media(int Vet[1001]){
-  int med; //variavel para calcular média
+  int med; //variavel para calcular mÃ©dia
   //calculo da media
   printf("\n\n>Media do vetor: %d", med);
 }
