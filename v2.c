@@ -32,7 +32,7 @@ void maiorValor(int Vet[]){
         maior = Vet[i];
     }
 
-  printf("\n>Maior valor do vetor: %d", maior);
+  printf("\n\n>Maior valor do vetor: %d", maior);
 }
 
 void menorValor(int Vet[]){
@@ -46,11 +46,11 @@ void menorValor(int Vet[]){
         menor = Vet[i];
     }
 
-  printf("\n>Menor valor do vetor: %d", menor);
+  printf("\n\n>Menor valor do vetor: %d", menor);
 }
 
 void media(int Vet[]){
-  float med;//variavel para calcular média
+  float med;//variavel para calcular mÃ©dia
   //calculo da media
   int soma=0;
   for(int i=0;i<1000;i++){
