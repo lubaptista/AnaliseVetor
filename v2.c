@@ -126,6 +126,20 @@ void imprime_ordenado(int *vet)
     printf("} ");
 }
 
+void mediana(int Vet[], int n)
+{
+  int m1, m2, M;
+
+  BubbleSort(Vet, n);
+
+      m1 = Vet[n / 2 - 1];
+      m2 = Vet[n / 2];
+      m1 += m2;
+      M = m1 / 2;
+
+      printf("\n\n>Mediana: %d", M);
+}
+
 int main()
 {
   int vet[1000], inicio=0, fim=1000, geraV;
@@ -139,5 +153,7 @@ int main()
   maiorValor(geraV);
   menorValor(geraV);
   media(geraV);
+  mediana(geraV, fim);
+
   return 0;
 }
